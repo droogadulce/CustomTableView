@@ -55,7 +55,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhK-cq-5pE">
-                                                    <rect key="frame" x="35" y="40" width="42" height="21"/>
+                                                    <rect key="frame" x="35" y="40" width="240" height="31.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -74,11 +74,16 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="tgM-Oo-4p2" secondAttribute="trailing" constant="20" id="1kE-3o-PeH"/>
+                                                <constraint firstAttribute="bottom" secondItem="NhK-cq-5pE" secondAttribute="bottom" constant="29" id="7mZ-lE-gH0"/>
                                                 <constraint firstItem="NhK-cq-5pE" firstAttribute="leading" secondItem="ibN-rm-gxZ" secondAttribute="leadingMargin" constant="20" id="8Np-OF-lRy"/>
+                                                <constraint firstItem="tgM-Oo-4p2" firstAttribute="leading" secondItem="NhK-cq-5pE" secondAttribute="trailing" constant="10" id="IgA-ql-H4v"/>
                                                 <constraint firstItem="NhK-cq-5pE" firstAttribute="top" secondItem="ibN-rm-gxZ" secondAttribute="topMargin" constant="29" id="bEx-3S-tQk"/>
                                                 <constraint firstItem="tgM-Oo-4p2" firstAttribute="top" secondItem="ibN-rm-gxZ" secondAttribute="top" constant="30" id="mBg-Hb-Wnd"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelContent" destination="NhK-cq-5pE" id="aqV-6T-rzD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
