@@ -70,6 +70,9 @@
                                                     <state key="normal" title="Eliminar">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="deletePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZq-8b-Rfk"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>

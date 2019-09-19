@@ -26,6 +26,15 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func deletePressed(_ sender: UIButton) {
+        let point = sender.convert(CGPoint.zero, to: itemList)
+        guard let indexPath = itemList.indexPathForRow(at: point) else {return}
+        stringArray.remove(at: indexPath.row)
+        itemList.beginUpdates()
+        itemList.deleteRows(at: [IndexPath(row: indexPath.row, section: 0)], with: .fade)
+        itemList.endUpdates()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
